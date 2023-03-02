@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { BankComponent } from './bank/bank.component';
 import { CustomerComponent } from './customer/customer.component';
 import { BankingService } from './services/banking.service';
+import { BancoComponent } from './banco/banco.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BankComponent,
-    CustomerComponent
+    CustomerComponent,
+    BancoComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,
