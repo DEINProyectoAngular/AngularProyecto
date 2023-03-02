@@ -1,16 +1,20 @@
-<form action="/my-handling-form-page" method="post">
+<h1>Añadir clientes</h1>
+<hr>
+<div>
+  <form action="/my-handling-form-page" method="post">
+    <div>
+      <label for="dni">Dni:</label>
+      <input type="text" id="dni" name="user_dni">
+    </div>
+      <br>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="email" id="nombre" name="user_nombre">
+    </div>
+  </form>
+  <br>
+  <button (click)="anadirCliente()">añadir Cliente</button>
   <ul>
-   <li>
-     <label for="dni">Dni:</label>
-     <input type="text" id="dni" name="user_dni">
-   </li>
-   <li>
-     <label for="nombre">Nombre:</label>
-     <input type="email" id="nombre" name="user_nombre">
-   </li>
+    <li *ngFor="let cliente of Clientes">{{"Cliente " + cliente.nombre + ", con dni " + cliente.dni + ", " + cliente.saldo + " euros"}}</li>
   </ul>
- </form>
- <button (click)="anadirCliente()">añadir Cliente</button>
- <ul>
-  <li *ngFor="let cliente of Clientes">{{cliente.dni + ", " + cliente.nombre}}</li>
-</ul>
+</div>
