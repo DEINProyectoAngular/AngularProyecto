@@ -1,1 +1,13 @@
-<p>banco works!</p>
+<form action="/my-handling-form-page" method="post">
+  <ul>
+   <li>
+     <label for="dni">Dni:</label>
+     <input type="text" id="dni" name="user_dni">
+   </li>
+   <li>
+     <label for="nombre">Nombre:</label>
+     <input type="email" id="nombre" name="user_nombre">
+   </li>
+  </ul>
+ </form>
+ <button (click)="anadirCliente()">Obtener Cliente</button>
