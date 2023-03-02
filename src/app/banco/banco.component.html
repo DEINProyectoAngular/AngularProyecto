@@ -10,4 +10,7 @@
    </li>
   </ul>
  </form>
- <button (click)="anadirCliente()">Obtener Cliente</button>
+ <button (click)="anadirCliente()">añadir Cliente</button>
+ <ul>
+  <li *ngFor="let cliente of Clientes">{{cliente.dni + ", " + cliente.nombre}}</li>
+</ul>

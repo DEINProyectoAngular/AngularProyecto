@@ -7,7 +7,7 @@ import { ClienteComponent } from '../cliente/cliente.component';
   styleUrls: ['./banco.component.sass']
 })
 export class BancoComponent {
-  private Clientes:Array<ClienteComponent> = [];
+  Clientes:Array<ClienteComponent> = [];
 
   constructor(){
     this.Clientes = [];
