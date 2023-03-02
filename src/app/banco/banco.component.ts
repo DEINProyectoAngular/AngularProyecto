@@ -4,7 +4,7 @@ import { ClienteComponent } from '../cliente/cliente.component';
 @Component({
   selector: 'app-banco',
   templateUrl: './banco.component.html',
-  styleUrls: ['./banco.component.sass']
+  styleUrls: ['./banco.component.scss']
 })
 export class BancoComponent {
   Clientes:Array<ClienteComponent> = [];
