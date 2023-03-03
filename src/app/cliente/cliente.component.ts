@@ -19,6 +19,10 @@ export class ClienteComponent {
   anadirSaldo(NuevoSaldo: number){
     this.saldo += NuevoSaldo;
   }
+
+  quitarSaldo(NuevoSaldo: number){
+    this.saldo -= NuevoSaldo;
+  }
 }
 
 //let yo = new ClienteComponent("123", "jose");

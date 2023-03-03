@@ -6,7 +6,7 @@
       <label for="dni">Dni:</label>
       <input type="text" id="dni" name="user_dni">
     </div>
-      <br>
+    <br>
     <div>
       <label for="nombre">Nombre:</label>
       <input type="email" id="nombre" name="user_nombre">
@@ -14,7 +14,42 @@
   </form>
   <br>
   <button (click)="anadirCliente()">añadir Cliente</button>
-  <ul>
-    <li *ngFor="let cliente of Clientes">{{"Cliente " + cliente.nombre + ", con dni " + cliente.dni + ", " + cliente.saldo + " euros"}}</li>
-  </ul>
+  <h1>Ingresar Dinero</h1>
+  <hr>
+  <form action="/my-handling-form-page" method="post">
+    <div>
+      <label for="dni_ingresar">Dni:</label>
+      <input type="text" id="dni_ingresar" name="user_dni_ingresar">
+    </div>
+    <br>
+    <div>
+      <label for="cantidad_ingresada">Cantidad ingresada:</label>
+      <input type="email" id="cantidad_ingresada" name="user_cantidad_ingresada">
+    </div>
+  </form>
+  <br>
+  <button (click)="ingresarCantidad()">Ingresar Cantidad</button>
+  <br>
+  <h1>Quitar Cantidad</h1>
+  <hr>
+  <form action="/my-handling-form-page" method="post">
+    <div>
+      <label for="dni_ingresar">Dni:</label>
+      <input type="text" id="dni_ingresar" name="user_dni_ingresar">
+    </div>
+    <br>
+    <div>
+      <label for="cantidad_quitar">Cantidad quitar:</label>
+      <input type="email" id="cantidad_quitar" name="user_cantidad_quitar">
+    </div>
+  </form>
+  <br>
+  <button (click)="quitarCantidad()">Quitar Cantidad</button>
+  <br>
+  <h1>Obtener clientes</h1>
+  <hr>
+  <button (click)="obtenerClientes()">Obtener clientes</button>
+  <br>
+  <br>
+  <textarea name="clientes" id="clientes" cols="150" rows="20"></textarea>
 </div>
