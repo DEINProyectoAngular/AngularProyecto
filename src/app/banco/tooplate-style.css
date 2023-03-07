@@ -155,7 +155,7 @@ p {
 
 .header.active .navbar-brand .logo {
   margin-top: 22px;
-  /*background-image: url(./img/black_logo.png);*/
+  background-image: url(./img/black_logo.png);
   display: inline-block;
   width: 125px;
   height: 32px;
