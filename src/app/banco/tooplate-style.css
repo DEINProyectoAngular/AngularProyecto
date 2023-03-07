@@ -358,6 +358,10 @@ ul.cd-hero-slider {
   color: inherit
 }
 
+#ingresar .section-heading {
+  margin-bottom: 60px;
+}
+
 #ingresar .right-image img {
   width: 100%;
   overflow: hidden;
@@ -388,6 +392,11 @@ ul.cd-hero-slider {
 
 #sacar {
   text-align: center;
+  background-image: url(./img/blog_02.jpg);
+}
+
+#sacar .section-heading {
+  margin-bottom: 60px;
 }
 
 .projects-holder .mix {
